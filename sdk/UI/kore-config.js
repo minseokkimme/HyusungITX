@@ -13,7 +13,7 @@
 
     var randNum = Math.random();
 
-    botOptions.JWTUrl = "http://localhost:3000/api/users/sts";
+    botOptions.JWTUrl = "http://61.97.184.107:3000/api/users/sts";
     botOptions.userIdentity = randNum;// Provide users email id here
     botOptions.botInfo = { name: "Starfield_FAQ", "_id": "st-da313bb3-a9ea-59a7-9d41-652709d4bf5d" }; // bot name is case sensitive
 
