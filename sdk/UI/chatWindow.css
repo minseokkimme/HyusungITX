@@ -2009,6 +2009,7 @@
 
 .kore-chat-window .tablechart .tablechartDiv,
 .kore-chat-window .largePreviewContent .tablehartDiv {
+    width: 100%;
     clear: both;
     left: -30px;
     position: relative;
