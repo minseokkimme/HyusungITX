@@ -4332,8 +4332,8 @@
             if ('webkitSpeechRecognition' in window && isChrome()) {
                 recognition = new window.webkitSpeechRecognition;
                 final_transcript = '';
-                recognition.continuous = false;
-                recognition.interimResults = false;
+                recognition.continuous = false; // 각 인식에 대해 연속 결과가 반환되는지 아니면 단일결과만 반환되는지
+                recognition.interimResults = false; // 중간결과가 반환되어야 하는지 STT Setting
 
                 recognition.onstart = function () {
                     prevStr = "";
