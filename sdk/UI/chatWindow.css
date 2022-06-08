@@ -814,7 +814,7 @@
 }
 
 .kore-chat-window a {
-    color: var(--sdk-chat-window-btn-default-bg);
+    color: var(--sdk-chat-widow-primary-font-color);
     text-decoration: none;
 }
 
