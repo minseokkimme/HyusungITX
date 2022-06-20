@@ -4,7 +4,7 @@
 
     var botOptions = {};
     botOptions.logLevel = 'debug';
-    botOptions.koreAPIUrl = "https://bots.kore.ai/api/";
+    botOptions.koreAPIUrl = "https://jp-bots.kore.ai/api/";
     botOptions.koreSpeechAPIUrl = "";//deprecated
     //botOptions.bearer = "bearer xyz-------------------";
     //botOptions.ttsSocketUrl = '';//deprecated
@@ -15,15 +15,15 @@
 
     botOptions.JWTUrl = "http://61.97.184.107:3000/api/users/sts";
     botOptions.userIdentity = randNum;// Provide users email id here
-    botOptions.botInfo = { name: "Starfield_FAQ", "_id": "st-da313bb3-a9ea-59a7-9d41-652709d4bf5d" }; // bot name is case sensitive
+    botOptions.botInfo = { name: "Starfield_FAQ", "_id": "st-507c9092-e71c-57ab-8fdb-db7b4011ef6c" }; // bot name is case sensitive
 
     /* 
     Important Note: These keys are provided here for quick demos to generate JWT token at client side but not for Production environment.
     Refer below document for JWT token generation at server side. Client Id and Client secret should maintained at server end.
     https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/
     **/
-    botOptions.clientId = "cs-268a960a-de8a-58e1-9167-3e21509a6fba";
-    botOptions.clientSecret = "p9QEr6hM+djA8wNAbMRBUu0/XJsox0E+Pin6ulzs3zs=";
+    botOptions.clientId = "cs-2cea4ff0-a20d-535c-b796-04fdd3091f78";
+    botOptions.clientSecret = "2/xIfBuqJN124AH50US5XNXVAtbF09FkFv+b60SAPtA=";
     botOptions.brandingAPIUrl = botOptions.koreAPIUrl +'websdkthemes/'+  botOptions.botInfo._id+'/activetheme';
     botOptions.enableThemes = false;
 // for webhook based communication use following option 
