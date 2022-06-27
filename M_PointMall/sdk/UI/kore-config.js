@@ -13,7 +13,7 @@
 
     var randNum = Math.random();
 
-    botOptions.JWTUrl = "http://localhost:3000/api/users/sts";
+    botOptions.JWTUrl = "http://61.97.184.107:3000/api/users/sts";
     botOptions.userIdentity = randNum;// Provide users email id here
     botOptions.botInfo = { name: "M_PointMall_FAQ", "_id": "st-f2c0898b-a96a-5de1-98bb-60d789c3c125" }; // bot name is case sensitive
 
