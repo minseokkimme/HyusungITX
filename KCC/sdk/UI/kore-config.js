@@ -13,17 +13,17 @@
 
     var randNum = Math.random();
 
-    botOptions.JWTUrl = "http://61.97.184.107:3001/api/users/sts";
+    botOptions.JWTUrl = "http://61.97.184.107:3002/api/users/sts";
     botOptions.userIdentity = randNum;// Provide users email id here
-    botOptions.botInfo = { name: "M_PointMall_FAQ", "_id": "st-f2c0898b-a96a-5de1-98bb-60d789c3c125" }; // bot name is case sensitive
+    botOptions.botInfo = { name: "KCC_Glass_FAQ", "_id": "st-7df4e6bc-dce6-54c0-8f65-a23a47d0f55f" }; // bot name is case sensitive
 
     /* 
     Important Note: These keys are provided here for quick demos to generate JWT token at client side but not for Production environment.
     Refer below document for JWT token generation at server side. Client Id and Client secret should maintained at server end.
     https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/
     **/
-    botOptions.clientId = "cs-2a8ca20d-8df0-505c-92e5-f14cde4b2bc7";
-    botOptions.clientSecret = "CnwRNuKf7gN/tbHwgJf4QXwjoGsGH1nlkzP3CPqyqYM=";
+    botOptions.clientId = "cs-84f08187-07aa-51b8-a21f-f96de2294a2e";
+    botOptions.clientSecret = "QhL7UOklw18mKhG4AA5yr4oNCSlydfZoRCLbYOr2Ios=";
     botOptions.brandingAPIUrl = botOptions.koreAPIUrl +'websdkthemes/'+  botOptions.botInfo._id+'/activetheme';
     botOptions.enableThemes = false;
 // for webhook based communication use following option 
