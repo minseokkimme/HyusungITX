@@ -147,15 +147,6 @@
 			 $(messageHtml).data(msgData);
 			 this.defaultCardTemplateEvents(messageHtml,msgData);
 		}
-		else if(msgData && msgData.message[0] && msgData.message[0].component && msgData.message[0].component.payload && msgData.message[0].component.payload.template_type == "imgMsgTemplate"){
-			messageHtml = $(this.getChatTemplate("imgMsgTemplate")).tmpl({
-				'msgData': msgData,
-				 'helpers': this.helpers,
-				'extension': this.extension
-			});
-			$(messageHtml).data(msgData);
-			this.defaultCardTemplateEvents(messageHtml,msgData);
-		}
 		else if(msgData && msgData.message[0] && msgData.message[0].component && msgData.message[0].component.payload && msgData.message[0].component.payload.template_type == "showScript"){
 			messageHtml = $(this.getChatTemplate("showScript")).tmpl({
 				'msgData': msgData,
@@ -2684,17 +2675,7 @@ var advancedListTemplate = '<script id="chat_message_tmpl" type="text/x-jqury-tm
 								</li> \
 						{{/if}} \
 				</scipt>';
-				var imgMsgTemplate = '<script id="chat_message_tmpl" type="text/x-jqury-tmpl"> \
-				{{if msgData.message}} \
-						<div class="messageBubble" aria-live="assertive">\
-						<div> \
-							{{each(key, msgItem) msgData.message[0].component.payload.names}} \
-								<img src="libs/images/${msgItem}"></img><br></br>\
-							{{/each}} \
-						</div> \
-					</div> \
-				{{/if}} \
-		</scipt>';
+
 
 		if (tempType === "dropdown_template") {
 			return dropdownTemplate;
@@ -2722,8 +2703,6 @@ var advancedListTemplate = '<script id="chat_message_tmpl" type="text/x-jqury-tm
 			return advancedListTemplate;
 		} else if(tempType === "showScript"){
 			return showScript;
-		} else if(tempType === "imgMsgTemplate"){
-			return imgMsgTemplate;
 		}
 		else if(tempType === "cardTemplate"){
 			return cardTemplate;
